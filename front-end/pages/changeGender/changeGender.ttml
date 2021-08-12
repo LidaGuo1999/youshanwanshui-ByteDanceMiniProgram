@@ -1,0 +1,10 @@
+<!-- /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/游山玩水/pages/changeGender/changeGender.ttml -->
+<view class="page-section" style="display: flex; justify-content: flex-start;">
+    <input class="input-block" value="{{inputValue}}" bindinput="handleInput" />
+</view>
+<view class="page-section">
+    <text class="text-general">你是小哥哥还是小姐姐？</text>
+</view>
+<view style="display: flex; justify-content: center;">
+    <button class="save-button" size="mini" bindtap="saveNameTap">保存</button>
+</view>

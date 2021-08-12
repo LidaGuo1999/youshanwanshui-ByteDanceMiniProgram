@@ -1,0 +1,26 @@
+<!-- /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/游山玩水/pages/strategy-new/strategy-new.ttml -->
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="page-section">
+
+        <view class="page-section-title page-section-title-space">标题</view>
+        <input class="picker" name="title" placeholder="为自己的攻略起个名字吧！" value="{{titleValue}}" bindinput="handleTitleInput"/>
+
+        <view class="page-section-title page-section-title-space">整体旅行概述</view>
+        <textarea class="picker" name="abstract" style="width: 100%; box-sizing: border-box;" placeholder="简单描述一下您的旅行吧" value="{{abstractValue}}" bindinput="handleAbstractInput"></textarea>
+        
+        <view class="page-section-title page-section-title-space">所包含景点攻略选择</view>
+        <view class="ttui-cells">
+            <checkbox-group bindchange="checkboxChange" name="chooseNodes">
+                <label class="ttui-cell" tt:for="{{nodes}}">
+                    <view class="ttui-cell__hd">
+                        <checkbox value="{{item.name}}" checked="{{item.checked}}" color="#66ccff"/>
+                    </view>
+                    <view class="ttui-cell__bd">{{item.name}}</view>
+                </label>
+            </checkbox-group>
+        </view>
+    </view>
+
+    <button type="default" formType="submit" style="background-color: #66ccff;">提交</button>
+    <button type="primary" formType="reset">重置</button>
+</form>

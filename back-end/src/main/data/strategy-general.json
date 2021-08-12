@@ -1,0 +1,28 @@
+{
+    "general": {
+        "青海小环线": {
+            "date": "2021-07-03",
+            "place": "环青海小环线",
+            "transportation": "五座SUV",
+            "price": "1000RMB/人",
+            "comment": "great",
+            "recommendation": "come"
+        },
+        "四川成都": {
+            "date": "2021-06-24",
+            "place": "四川省成都市",
+            "transportation": "地铁",
+            "price": "600RMB/人",
+            "comment": "great2",
+            "recommendation": "come2"
+        },
+        "湖南长沙": {
+            "date": "2021-06-27",
+            "place": "湖南省长沙市",
+            "transportation": "高铁",
+            "price": "800RMB/人",
+            "comment": "great3",
+            "recommendation": "come3"
+        }
+    }
+}

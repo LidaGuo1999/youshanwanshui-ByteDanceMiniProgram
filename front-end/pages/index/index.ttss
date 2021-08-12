@@ -1,0 +1,77 @@
+.ttui-input {
+  height: 96rpx;
+  width: 70%;
+  flex-grow: 2;
+}
+.search-input-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2rpx solid black;
+}
+.search-button {
+  background-color: #66ccff;
+  color: black;
+  flex-grow: 1;
+}
+
+.image-recommend {
+  text-align: center;
+  height: 300rpx;
+}
+.display-image-1 {
+  background-image:url("pic/lake.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+.display-image-2 {
+  background-image:url("pic/mountain.jpg");
+  background-size: 100% 100%;
+  position: relative;
+}
+.display-image-3 {
+  background-image:url("pic/salt-lake.jpg");
+  background-size: 100% 100%;
+  position: relative;
+}
+.swiper-1 {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20rpx 30rpx;
+}
+.strategy-general {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #a4ebf3;
+  margin: 0 20rpx;
+  height: 100rpx;
+}
+.strategy-text {
+  width: 70%;
+  flex-grow: 2;
+  color: black;
+  padding: 5rpx 5rpx 10rpx 10rpx;
+}
+.strategy-button {
+  width: 16%;
+  flex-grow: 1;
+  margin: 10rpx;
+  background-color: #fdcfdf;
+  color: black;
+  font-size: 0.75rem;
+}
+.footer-general {
+  position: fixed;
+  bottom: 0;
+  height: 50rpx;
+}
+.page-section-last{
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 100rpx;
+}
+.scroll-general {
+  margin-bottom: -100rpx;
+}

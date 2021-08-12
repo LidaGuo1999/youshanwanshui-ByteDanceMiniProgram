@@ -1,0 +1,35 @@
+<!-- /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/DaDa/pages/my/my.ttml -->
+<view class="profile-general">
+    <view class="profile-each" style="height: 180rpx; line-height: 180rpx;">
+        <text style="padding-left: 10rpx;">头像</text>
+        <image tt:if="{{isLogin}}" style="float: right; height: 160rpx; width: 160rpx; margin: 10rpx; border-radius: 20rpx;" src="{{headUrl}}" />
+        <text class="profile-text-value" tt:else style="float: right;">未登录</text>
+    </view>
+    <view class="profile-each" bindtap="changeNameTap">
+        <text style="padding-left: 10rpx;">昵称</text>
+        <text style="float: right;" tt:if="{{isLogin}}" space="nbsp"> ></text>
+        <text class="profile-text-value" style="float: right;">{{userName}}</text>
+    </view>
+    <view class="profile-each" bindtap="changeGenderTap">
+        <text style="padding-left: 10rpx;">性别</text>
+        <text style="float: right;" tt:if="{{isLogin}}" space="nbsp"> ></text>
+        <text class="profile-text-value" style="float: right;">{{gender}}</text>
+    </view>
+    <view class="profile-each" bindtap="changeAgeTap">
+        <text style="padding-left: 10rpx;">年龄</text>
+        <text style="float: right;" tt:if="{{isLogin}}" space="nbsp"> ></text>
+        <text class="profile-text-value" style="float: right;">{{age}}</text>
+    </view>
+    <view class="profile-each" bindtap="changePhoneTap">
+        <text style="padding-left: 10rpx;">绑定手机号</text>
+        <text style="float: right;" tt:if="{{isLogin}}" space="nbsp"> ></text>
+        <text class="profile-text-value" style="float: right;">{{phone}}</text>
+        
+    </view>
+    <view class="profile-each" bindtap="storageTap">
+        <text style="padding-left: 10rpx;">个人攻略库</text>
+        <text class="profile-text-value" style="float: right;">{{storage}}</text>
+    </view>
+    <button tt:if="{{isLogin}}" style="margin: 20rpx 20rpx;" type="primary" bindtap="exitTap">退出登录</button>
+    <button tt:else style="margin: 20rpx 20rpx; background-color: #66ccff;" type="default" bindtap="loginTap">登录</button>
+</view>

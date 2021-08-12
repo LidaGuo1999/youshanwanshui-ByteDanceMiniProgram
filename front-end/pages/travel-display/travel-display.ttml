@@ -1,0 +1,56 @@
+<!-- /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/游山玩水/pages/travel-display/travel-display.ttml -->
+<view class="page-section">
+    <view class="page-section-title page-section-title-space">旅行日期</view>
+    <picker name="date" mode="date" value="{{travelDate}}" start="2021-01-01" end="2026-12-31" bindchange="bindDateChange" fields="day">
+        <view class="picker">
+          旅游日期：{{date}}
+        </view>
+    </picker>
+
+    <view class="page-section-title page-section-title-space">旅行地点</view>
+    <input class="picker" name="location" value="{{place}}" disabled="true"/>
+
+    <view class="page-section-title page-section-title-space">前往旅行地交通方式</view>
+    <textarea class="picker" name="transportation" style="width: 100%; box-sizing: border-box;" value="{{transportation}}" disabled="true"></textarea>
+
+    <view class="page-section-title page-section-title-space">景区花费</view>
+    <input class="picker" name="price" value="{{price}}" disabled="true"/>
+
+    <view class="page-section-title page-section-title-space">景点评价</view>
+    <radio-group class="radio" name="commentRadio">
+      <view tt:for="{{fiveGradeItems}}">
+          <label>
+              <radio style="font-size: 1rem;" value="{{item.name}}" color="#66ccff" disabled="{{false}}" checked="{{item.checked}}"/>
+              {{item.name}}
+          </label>
+      </view>
+    </radio-group>
+    <textarea class="picker" name="commentText" style="width: 100%; box-sizing: border-box;" value="{{commentText}}" disabled="true"></textarea>
+    
+    
+    <view class="page-section-title page-section-title-space" style="width: 100%;">游览建议</view>
+    <textarea class="picker" name="recommendation" style="width: 100%; box-sizing: border-box;" value="{{recommendation}}" disabled="true"></textarea>
+
+    <view class="page-section-title page-section-title-space" style="width: 100%;"></view>
+    <view class="ttui-cells choose-image">
+        <view class="ttui-cell ttui-cell-image">
+          <view class="ttui-cell__bd">
+            <view class="ttui-uploader">
+              <view class="ttui-uploader__hd">
+                <view class="ttui-uploader__title">照片展示</view>
+                <view class="ttui-uploader__info">共{{tmpImagePaths.length}}张</view>
+              </view>
+              <view class="ttui-uploader__bd">
+                <view class="ttui-uploader__files">
+                  <block tt:for="{{tmpImagePaths}}" tt:for-item="image">
+                    <view class="ttui-uploader__file">
+                      <image class="ttui-uploader__img" src="{{image}}" data-src="{{image}}" mode="aspectFill" bindtap="picPreviewTap"></image>
+                    </view>
+                  </block>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+</view>

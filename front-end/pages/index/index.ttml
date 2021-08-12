@@ -1,0 +1,42 @@
+<view class="page-section">
+    <view class="search-input-block">
+        <input class="ttui-input" style="margin-left: 10rpx;" bindinput="searchHandleInput" value="" type="text" cursor="{{-1}}" selection-start="{{-1}}" selection-end="{{-1}}" disabled="{{false}}" auto-focus focus placeholder="请输入景点或旅游线路名" />
+
+        <button class="search-button" style="margin-right: 10rpx;" bindtap="searchTap" type="primary" size="mini" hover-start-time="20" hover-stay-time="20">搜索</button>
+    </view>
+</view>
+
+<view>
+    <view class="page-section">
+        <view class="page-section-title">当前热门景点推荐</view>
+        <swiper class="swiper-1" indicator-dots="true" autoplay="true" circular="true">
+            <block tt:for="{{displayImages}}">
+              <swiper-item>
+                <view class="image-recommend {{item}}"></view>
+              </swiper-item>
+            </block>
+        </swiper>
+    </view>
+</view>
+
+<view>
+    <view class="page-section">
+        <view class="page-section-title">当前热门旅行推荐</view>
+            <view tt:for="{{strategyNum}}">
+                <view class="strategy-general">
+                    <text class="strategy-text">{{strategies1[item]}}</text>
+                    <button class="strategy-button" type="primary" size="mini" hover-start-time="20" hover-stay-time="20" bindtap="viewStrategy" data-name="{{strategies1[item]}}">查看</button>
+                </view>
+                <view class="strategy-general" style="background-color: #f9f9f9;">
+                    <text class="strategy-text">{{strategies2[item]}}</text>
+                    <button class="strategy-button" type="primary" size="mini" hover-start-time="20" hover-stay-time="20" bindtap="viewStrategy" data-name="{{strategies2[item]}}">查看</button>
+                </view>
+            </view>
+            <view tt:if="{{isOdd}}">
+                <view class="strategy-general">
+                    <text class="strategy-text">{{strategies1[strategyLast]}}</text>
+                    <button class="strategy-button" type="primary" size="mini" hover-start-time="20" hover-stay-time="20" bindtap="viewStrategy" data-name="{{strategies1[strategyLast]}}">查看</button>
+                </view>
+            </view>
+    </view>
+</view>

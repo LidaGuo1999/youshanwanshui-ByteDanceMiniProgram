@@ -1,0 +1,9 @@
+/* /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/DaDa/pages/login/login.ttss */
+.input-sameline {
+    text-align: center;
+    margin: 20rpx;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

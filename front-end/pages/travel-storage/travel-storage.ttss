@@ -1,0 +1,34 @@
+/* /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/游山玩水/pages/travel-storage/travel-storage.ttss */
+.strategy-each {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #bce6eb;
+    border-radius: 10rpx;
+    margin: 10rpx;
+    height: 100rpx;
+}
+.strategy-text {
+    line-height: 100rpx;
+    width: 60%;
+    flex-grow: 2;
+    padding-left: 10rpx;
+}
+.strategy-button {
+    flex-grow: 0;
+    height: 80rpx;
+    margin: 5rpx 5rpx;
+    line-height: 80rpx;
+    width: 120rpx;
+    font-size: smaller;
+}
+.scroll-strategy {
+    display: flex;
+    height: 300rpx;
+    margin: 10rpx;
+    border-bottom: 1rpx solid black;
+}
+.generate-strategy {
+    margin: 20rpx;
+    background-color: #66ccff;
+}

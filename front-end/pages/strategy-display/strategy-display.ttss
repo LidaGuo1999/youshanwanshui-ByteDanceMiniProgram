@@ -1,0 +1,118 @@
+/* /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/游山玩水/pages/strategy-display/strategy-display.ttss */
+.swiper-node {
+    height: auto;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    height: 100rpx;
+}
+.page-section {
+    margin-bottom: 32rpx;
+  }
+  .ttui-input {
+    height: 96rpx;
+    min-height: 96rpx;
+    line-height: 96rpx;
+  }
+  .search-input-block {
+    box-sizing: border-box;
+    width: 80%;
+    padding-left: 15rpx;
+    float: left;
+    height: 50rpx;
+  }
+  .search-button::after {
+    box-sizing: border-box;
+    width: 20%;
+    float: right;
+    height: auto;
+  }
+  .image-recommend {
+    text-align: center;
+    height: 300rpx;
+  }
+  .display-image-1 {
+    background-image:url("pic/lake.png");
+    background-size: 100% 100%;
+    position: relative;
+  }
+  .display-image-2 {
+    background-image:url("pic/mountain.jpg");
+    background-size: 100% 100%;
+    position: relative;
+  }
+  .display-image-3 {
+    background-image:url("pic/salt-lake.jpg");
+    background-size: 100% 100%;
+    position: relative;
+  }
+  .swiper-1 {
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 100rpx;
+    padding-right: 100rpx;
+  }
+  .strategy-general {
+    align-items: center;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    padding: 20rpx 20rpx 20rpx 20rpx;
+    margin: 20rpx 20rpx 20rpx 20rpx;
+    height: 100rpx;
+  }
+  .strategy-text {
+    float: left;
+    padding: 5rpx 5rpx 10rpx 10rpx;
+  }
+  .strategy-button {
+    float: right;
+  }
+  .footer-general {
+    position: fixed;
+    bottom: 0;
+    height: 50rpx;
+  }
+  .page-section-last{
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 100rpx;
+  }
+  .scroll-general {
+    margin-bottom: -100rpx;
+  }
+  .form-each {
+      display: flex;
+      margin: 20rpx 20rpx;
+  }
+  .input-oneline {
+      background-color: beige;
+      border: 3rpx solid #000000;
+      line-height: 50rpx;
+  }
+  .picker{
+    border: 3rpx solid black;
+    padding: 19rpx 26rpx;
+    background-color: #FFFFFF;
+  }
+  .page-section {
+    margin-bottom: 32rpx;
+  }
+  .ttui-cell-image {
+    height: auto;
+  }
+  
+  .choose-image {
+    margin-top: 40rpx;
+  }
+  
+  .image-action {
+    margin: 20px 0;
+  }
+  .radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  

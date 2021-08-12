@@ -1,0 +1,49 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages":[
+    "pages/index/index",
+    "pages/search-display/search-display",
+    "pages/my/my",
+    "pages/travel-new/travel-new",
+    "pages/login/login", 
+    "pages/travel-display/travel-display",
+    "pages/changeName/changeName",
+    "pages/travel-storage/travel-storage",
+    "pages/strategy-new/strategy-new",
+    "pages/strategy-display/strategy-display",
+    "pages/changeAge/changeAge",
+    "pages/changeGender/changeGender",
+    "pages/changePhone/changePhone"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "游山玩水",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./pic/home-empty.png",
+        "selectedIconPath": "pic/home-select.png"
+      }, 
+      {
+        "pagePath": "pages/travel-new/travel-new",
+        "iconPath": "./pic/add-empty.png",
+        "selectedIconPath": "pic/add-select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "./pic/my-empty.png",
+        "selectedIconPath": "pic/my-select.png"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": []
+}

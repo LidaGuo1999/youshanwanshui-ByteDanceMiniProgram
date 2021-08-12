@@ -1,0 +1,35 @@
+<!-- /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/游山玩水/pages/travel-storage/travel-storage.ttml -->
+<view class="page-section">
+    <view class="page-section-title page-section-title-space">
+        <text>完整旅行攻略</text>
+    </view>
+</view>
+
+<view style="width: 100%; display: flex;">
+    <scroll-view class="scroll-strategy" scroll-y="true" scroll-with-animation="true" scroll-top="0">
+        <view tt:for="{{strategies}}" class="strategy-each">
+            <text class="strategy-text">{{item}}</text>
+            <button class="strategy-button" style="background-color: #fdcfdf" size="default" bindtap="strategyViewTap" data-name="{{item}}">查看</button>
+            <button class="strategy-button" size="default" type="primary" bindtap="strategyDelTap" data-name="{{item}}">删除</button>
+        </view>
+    </scroll-view>
+</view>
+
+<view class="page-section">
+    <view class="page-section-title page-section-title-space">
+        <text>单个景点攻略</text>
+    </view>
+</view>
+
+<view style="width: 100%; display: flex;">
+    <scroll-view class="scroll-strategy" scroll-y="true" scroll-with-animation="true" scroll-top="0">
+        <view tt:for="{{nodes}}" class="strategy-each">
+            <text class="strategy-text">{{item}}</text>
+            <button class="strategy-button" style="background-color: #fdcfdf" size="default" bindtap="nodeViewTap" data-name="{{item}}">查看</button>
+            <button class="strategy-button" size="default" type="primary" bindtap="nodeDelTap" data-name="{{item}}">删除</button>
+        </view>
+    </scroll-view>
+</view>
+<view class="page-section">
+    <button class="generate-strategy" bindtap="strategyGenerateTap">生成新的完整旅行攻略</button>
+</view>

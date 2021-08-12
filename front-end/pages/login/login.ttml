@@ -1,0 +1,14 @@
+<!-- /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/DaDa/pages/login/login.ttml -->
+<form>
+    <view class="input-sameline">
+        <view style="padding-left: 30rpx; padding-right: 30rpx; float: left;">用户名</view>
+        <input style="border: 3rpx solid black; line-height: 20rpx;width: 50%;"/>
+    </view>
+    <view class="input-sameline">
+        <view style="padding-left: 30rpx; padding-right: 30rpx; float: left;">密码</view>
+        <input style="border: 3rpx solid black; line-height: 20rpx;width: 50%;" password="true"/>
+    </view>
+    <view>
+        <button formType="submit" type="primary" bindtap="loginTap" style="width: 70%;">登录</button>
+    </view>
+</form>

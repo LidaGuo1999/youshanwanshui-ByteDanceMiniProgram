@@ -1,0 +1,21 @@
+/* /Users/mac/Documents/Study/Research/字节跳动字学镜像计划/游山玩水/pages/changeName/changeName.ttss */
+.input-block {
+    width: 90%;
+    height: 75rpx;
+    margin: 15rpx;
+    margin-bottom: 0;
+    border-bottom: 2rpx solid black;
+}
+.save-button {
+    width: 95%;
+    background-color: #66ccff;
+    flex-grow: 1;
+    margin-top: 0;
+    margin: 15rpx;
+    height: 75rpx;
+}
+.text-general {
+    margin-left: 30rpx;
+    color: grey;
+    font-size: small;
+}

@@ -1,0 +1,27 @@
+
+
+<view class="page-section-last">
+    <view class="page-section">
+        <view class="page-section-title">景点攻略查询结果</view>
+        <scroll-view class="scroll-general" scroll-y="true">
+            <view tt:for="{{nodes}}">
+                <view class="strategy-general">
+                    <text class="strategy-text">{{item.value}}</text>
+                    <button class="strategy-button" type="primary" size="mini" hover-start-time="20" hover-stay-time="20" data-index="{{item.index}}" data-genre="node" bindtap="viewTap">查看</button>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <view class="page-section">
+        <view class="page-section-title">旅行攻略查询结果</view>
+        <scroll-view class="scroll-general" scroll-y="true">
+            <view tt:for="{{strategies}}">
+                <view class="strategy-general">
+                    <text class="strategy-text">{{item.value}}</text>
+                    <button class="strategy-button" type="primary" size="mini" hover-start-time="20" hover-stay-time="20" data-index="{{item.index}}" data-genre="strategy" bindtap="viewTap">查看</button>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
